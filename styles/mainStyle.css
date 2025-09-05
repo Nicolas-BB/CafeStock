@@ -18,7 +18,7 @@
     --subtitle-font: medium 36px/36px "Quicksand", Helvetica, sans-serif;
     --description-font: 300 14px/16px "Poppins", sans-serif;
 
-    /* Botão */
+    /* Botão Comprar */
     --buyButton-bg: linear-gradient(to bottom, #38F500, #28AE00);
     --buyButton-color: #fff;
     --buyButton-padding: 10px 20px;
