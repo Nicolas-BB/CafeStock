@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+ul, ol, a {
+    text-decoration: none;
+    list-style: none;
+}
+
 :root {
     /* Sombra */
     --drop-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 25%);
@@ -27,6 +32,19 @@
     --buyButton-padding: 10px 20px;
     --buyButton-radius: 20px;
     --buyButton-font: bold 36px "Poppins", sans-serif;
+
+    /* Botão primário */
+    --primaryButton-bg: linear-gradient(to bottom, #7E4F34, #593825);
+    --primaryButton-font: bold 26px "Poppins", sans-serif;
+    --primaryButton-padding: 14px 26px;
+    --primaryButton-color: #F2F2F2;
+
+    /* Botão secundário */
+    --secondaryButton-bg: #F2F2F2;
+    --secondaryButton-font: bold 26px "Poppins", sans-serif;
+    --secondaryButton-padding: 14px 26px;
+    --secondaryButton-color: #593825;
+    --secondaryButton-border: #593825 2px solid;
 }
 
 .buyButton {
@@ -42,4 +60,23 @@
     text-decoration: none;
     box-shadow: 0px 0px 15px 0px #38F500;
     padding: 18px 36px;
+}
+
+.primaryButton {
+    background: var(--primaryButton-bg);
+    font: var(--primaryButton-font);
+    padding: var(--primaryButton-padding);
+    color: var(--primaryButton-color);
+    border-radius: 12px;
+    box-shadow: var(--drop-shadow);
+}
+
+.secondaryButton {
+    background: var(--secondaryButton-bg);
+    font: var(--secondaryButton-font);
+    padding: var(--secondaryButton-padding);
+    color: var(--secondaryButton-color);
+    box-shadow: var(--drop-shadow);
+    border: var(--secondaryButton-border);
+    border-radius: 12px;
 }
