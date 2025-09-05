@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Paleta de cores */
+    --first-color: #4B7A3D;
+    --second-color: #D97904;
+    --third-color: #8C6B4D;
+    --fourth-color: #593825;
+    --fifth-color: #F5E9D9;
+
+    /* Tipografia */
+    --title-font: bold 48px/48px "Quicksand", Helvetica, sans-serif;
+    --body-font: 300 26px/28px "Poppins", sans-serif;
+    --subtitle-font: medium 36px/36px "Quicksand", Helvetica, sans-serif;
+    --description-font: 300 14px/16px "Poppins", sans-serif;
+
+    /* Botão */
+    --buyButton-bg: linear-gradient(to bottom, #38F500, #28AE00);
+    --buyButton-color: #fff;
+    --buyButton-padding: 10px 20px;
+    --buyButton-radius: 20px;
+    --buyButton-font: bold 36px "Poppins", sans-serif;
+}
+
+.buyButton {
+    background: var(--buyButton-bg);
+    color: var(--buyButton-color);
+    padding: var(--buyButton-padding);
+    border: none;
+    border-radius: var(--buyButton-radius);
+    font: var(--buyButton-font);
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    box-shadow: 0px 0px 15px 0px #38F500;
+    padding: 18px 36px;
+}
