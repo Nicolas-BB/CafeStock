@@ -33,7 +33,7 @@ footer ul {
     gap: 8px;
 }
 
-.mapSiteContainer {
+.siteMapContainer {
     display: flex;
     flex-direction: column;
     gap: 20px;
