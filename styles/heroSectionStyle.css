@@ -1,0 +1,26 @@
+.heroSection {
+    height: 1000px;
+    display: flex;
+    padding: 320px 256px;
+    justify-content: right;
+    align-items: center;
+    background-image: url(../resources/images/heroSection.jpg);
+    background-size: cover;
+}
+
+.heroSection div {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 420px;
+    gap: 32px;
+}
+
+.heroSection h1 {
+    font: var(--title-font);
+}
+
+.heroSection p {
+    font: var(--body-font);
+    color: var(--third-color);
+}
