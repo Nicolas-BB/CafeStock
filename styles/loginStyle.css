@@ -1,0 +1,44 @@
+body {
+    display: flex;
+}
+
+.backgroundImg {
+    height: 100vh;
+}
+
+.loginContainer {
+    background-color: #F8FAF9;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBoxContainer {
+    background: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
+    padding: 82px 94px;
+    border-radius: 32px;
+    box-shadow: var(--drop-shadow);
+}
+
+.loginContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
