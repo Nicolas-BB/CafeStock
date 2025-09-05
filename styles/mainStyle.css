@@ -5,6 +5,9 @@
 }
 
 :root {
+    /* Sombra */
+    --drop-shadow: 0px 0px 15px 0px #38F500;
+
     /* Paleta de cores */
     --first-color: #4B7A3D;
     --second-color: #D97904;
