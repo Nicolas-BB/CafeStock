@@ -52,6 +52,8 @@ body {
 input {
     height: 48px;
     border-radius: 12px;
+    font: var(--description-font);
+    padding: 10px;
 }
 
 .passInput {
