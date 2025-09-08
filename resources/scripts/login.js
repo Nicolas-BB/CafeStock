@@ -10,7 +10,7 @@ function login() {
     if (users.includes(user)) {
         if (pass[users.indexOf(user)] === password) {
             alert('Login autorizado');
-            window.location.href = '../index.html'
+            window.location.href = '../dashboard.html'
         } else {
             alert('Usuário ou senha incorreto');
         }
