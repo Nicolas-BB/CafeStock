@@ -22,9 +22,9 @@ ul, ol, a {
 
     /* Tipografia */
     --title-font: bold 48px/48px "Quicksand", Helvetica, sans-serif;
-    --body-font: 300 26px/28px "Poppins", sans-serif;
-    --subtitle-font: medium 36px/36px "Quicksand", Helvetica, sans-serif;
-    --description-font: 300 14px/16px "Poppins", sans-serif;
+    --subtitle-font: medium 32px/32px "Quicksand", Helvetica, sans-serif;
+    --body-font: 300 24px/24px "Poppins", sans-serif;
+    --description-font: 300 16px/16px "Poppins", sans-serif;
 
     /* Botão Comprar */
     --buyButton-bg: linear-gradient(to bottom, #38F500, #28AE00);
@@ -35,13 +35,13 @@ ul, ol, a {
 
     /* Botão primário */
     --primaryButton-bg: linear-gradient(to bottom, #7E4F34, #593825);
-    --primaryButton-font: bold 26px "Poppins", sans-serif;
+    --primaryButton-font: bold 24px/24px "Poppins", sans-serif;
     --primaryButton-padding: 14px 26px;
     --primaryButton-color: #F2F2F2;
 
     /* Botão secundário */
     --secondaryButton-bg: #F2F2F2;
-    --secondaryButton-font: bold 26px "Poppins", sans-serif;
+    --secondaryButton-font: bold 24px/24px "Poppins", sans-serif;
     --secondaryButton-padding: 14px 26px;
     --secondaryButton-color: #593825;
     --secondaryButton-border: #593825 2px solid;

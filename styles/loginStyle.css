@@ -20,6 +20,7 @@ body {
     padding: 82px 94px;
     border-radius: 32px;
     box-shadow: var(--drop-shadow);
+    width: 600px;
 }
 
 .loginContentContainer {
@@ -28,6 +29,10 @@ body {
     gap: 16px;
     justify-content: center;
     align-items: center;
+}
+
+.loginContentContainer p {
+    font: var(--description-font);
 }
 
 .input {
@@ -41,4 +46,21 @@ body {
     flex-direction: column;
     gap: 16px;
     width: 100%;
+    font: var(--body-font);
+}
+
+input {
+    height: 48px;
+    border-radius: 12px;
+}
+
+.passInput {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.passInput a {
+    font: var(--description-font);
+    align-self: flex-end;
 }
