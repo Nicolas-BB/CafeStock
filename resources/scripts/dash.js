@@ -53,7 +53,7 @@ json.resumo.forEach(i => {
 json.consumo.forEach(i => {
     const ret = document.createElement('div');
     ret.classList.add('ret');
-    ret.style.height = (i.valor * 10) + 'px';
+    ret.style.height = (i.valor * 5) + 'px';
     ret.style.backgroundColor = 'orange';
     document.querySelector('.graficoConsumo').appendChild(ret);
 });
@@ -62,7 +62,7 @@ json.entradas.forEach(i => {
     const ret = document.createElement('div');
     ret.classList.add('ret');
     if (i.valor < 0) {
-        ret.style.height = (i.valor * -1) * 10 + 'px';
+        ret.style.height = (i.valor * -1) * 5 + 'px';
         ret.style.backgroundColor = 'orange';
     } else {
         ret.style.height = (i.valor * 10) + 'px';

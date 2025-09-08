@@ -1,0 +1,10 @@
+.ret {
+    animation-duration: 2s;
+    animation-name: easein;
+}
+
+@keyframes easein {
+    from {
+        height: 0%;
+    }
+}
