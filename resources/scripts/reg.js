@@ -127,8 +127,83 @@ const json = [
     }
 ]
 
-const list = document.querySelector('#list');
+const tbody = document.querySelector('#tbody');
 
 json.forEach(i => {
-        
+    const tr = document.createElement('tr');
+
+    const tdNome = document.createElement('td');
+    tdNome.innerText = i.nome;
+    tr.appendChild(tdNome)
+
+    const tdTipo = document.createElement('td');
+    tdTipo.innerText = i.tipo;
+    tr.appendChild(tdTipo)
+
+    const tdDate = document.createElement('td');
+    tdDate.innerText = i.date;
+    tr.appendChild(tdDate)
+
+    const tdQtd = document.createElement('td');
+    tdQtd.innerText = i.quantidade;
+    tr.appendChild(tdQtd)
+
+    tbody.appendChild(tr);
 });
+
+function add() {
+    const name = document.querySelector('#name');
+    const type = document.querySelector('#type');
+    const time = document.querySelector('#time');
+    const qtd = document.querySelector('#qtd');
+
+    if (name.value.length == 0 || type.value.length == 0 || time.value.length == 0 || qtd.value.length == 0) {
+
+    } else {
+        const newEntry = {
+            "nome": name.value,
+            "tipo": type.value,
+            "date": time.value,
+            "quantidade": qtd.value
+        }
+
+        json.push(newEntry);
+        renderTable();
+
+        name.value = '';
+        type.value = '';
+        time.value = '';
+        qtd.value = '';
+    }
+}
+
+function limpar() {
+    json.length = 0;
+    renderTable();
+}
+
+function renderTable() {
+    tbody.innerHTML = '';
+
+    json.forEach(i => {
+        const tr = document.createElement('tr');
+
+        const tdNome = document.createElement('td');
+        tdNome.innerText = i.nome;
+        tr.appendChild(tdNome)
+
+        const tdTipo = document.createElement('td');
+        tdTipo.innerText = i.tipo;
+        tr.appendChild(tdTipo)
+
+        const tdDate = document.createElement('td');
+        tdDate.innerText = i.date;
+        tr.appendChild(tdDate)
+
+        const tdQtd = document.createElement('td');
+        tdQtd.innerText = i.quantidade;
+        tr.appendChild(tdQtd)
+
+        tbody.appendChild(tr);
+    });
+}

@@ -32,15 +32,15 @@
                     </div>
                     <div>
                         <label for="type">Tipo de café</label>
-                        <input type="text" name="coffeeType" id="coffeeType">
+                        <input type="text" name="type" id="type">
                     </div>
                     <div>
-                        <label for="deliveryTime">Hora de entrega</label>
-                        <input type="time" name="deliveryTime" id="deliveryTime">
+                        <label for="time">Hora de entrega</label>
+                        <input type="time" name="time" id="time">
                     </div>
                     <div>
-                        <label for="quantity">Quantidade</label>
-                        <input type="number" name="quantity" id="quantity">
+                        <label for="qtd">Quantidade</label>
+                        <input type="number" name="qtd" id="qtd">
                     </div>
                 </div>
                 <div class="actionsContainer">
@@ -48,40 +48,23 @@
                     <button class="primaryButton" onclick="add()">Adicionar</button>
                 </div>
                 <div class="listContainer">
-                    <div class="filterContainer">
-                        <div class="nameFilter">Nome</div>
-                        <div class="coffeeTypeFilter">Tipo de café</div>
-                        <div class="deliveryTimeFilter">Hora de entrega</div>
-                        <div class="quantityFilter">Quantidade</div>
-                    </div>
-                    <hr>
-                    <div class="filteredContainer">
-                        <ol id="list">
-                            <ul>
-                                <li>Marcos</li>
-                                <li>Torrado</li>
-                                <li>00:00</li>
-                                <li>2</li>
-                            </ul>
-                            <ul>
-                                <li>Carla</li>
-                                <li>Torrado</li>
-                                <li>00:00</li>
-                                <li>4</li>
-                            </ul>
-                            <ul>
-                                <li>Nícolas</li>
-                                <li>Moído</li>
-                                <li>00:00</li>
-                                <li>999</li>
-                            </ul>
-                        </ol>
-                    </div>
+                    <table class="table" id="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Tipo de café</th>
+                                <th>Hora de entrega</th>
+                                <th>Quantidade</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-    <script src="./resources/scripts/dash.js"></script>
+    </div>
+    <script src="./resources/scripts/reg.js"></script>
 </body>
 
 </html>
