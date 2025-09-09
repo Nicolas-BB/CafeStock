@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/cadastrarStyle.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <title>Cadastrar</title>
+</head>
+
+<body>
+    <header>
+        <img src="./resources/images/logo.png" alt="Logo do sistema">
+        <img src="./resources/images/user.png" alt="Foto de perfil" style="height: 50px;">
+    </header>
+
+    <div class="container">
+        <div class="navMenu">
+            <ul>
+                <li><a href="./dashboard.html"><img src="./resources/images/dash.png" alt="ícone de gráfico">Dashboard</a></li>
+                <li><a href="./cadastrar.html"><img src="./resources/images/plus.png" alt="Ícone de soma">Cadastrar</a></li>
+            </ul>
+        </div>
+        <div class="cadastroContainer">
+            <div class="cadastroBox">
+                <div class="inputsContainer">
+                    <div>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="type">Tipo de café</label>
+                        <input type="text" name="type" id="type">
+                    </div>
+                    <div>
+                        <label for="time">Hora de entrega</label>
+                        <input type="time" name="time" id="time">
+                    </div>
+                    <div>
+                        <label for="qtd">Quantidade</label>
+                        <input type="number" name="qtd" id="qtd">
+                    </div>
+                </div>
+                <div class="actionsContainer">
+                    <button class="secondaryButton" onclick="limpar()">Limpar</button>
+                    <button class="primaryButton" onclick="add()">Adicionar</button>
+                </div>
+                <div class="listContainer">
+                    <table class="table" id="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Tipo de café</th>
+                                <th>Hora de entrega</th>
+                                <th>Quantidade</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./resources/scripts/reg.js"></script>
+</body>
+
+</html>

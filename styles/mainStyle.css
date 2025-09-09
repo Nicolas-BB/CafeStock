@@ -4,7 +4,15 @@
     box-sizing: border-box;
 }
 
+ul, ol, a {
+    text-decoration: none;
+    list-style: none;
+}
+
 :root {
+    /* Sombra */
+    --drop-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 25%);
+
     /* Paleta de cores */
     --first-color: #4B7A3D;
     --second-color: #D97904;
@@ -14,16 +22,31 @@
 
     /* Tipografia */
     --title-font: bold 48px/48px "Quicksand", Helvetica, sans-serif;
-    --body-font: 300 26px/28px "Poppins", sans-serif;
-    --subtitle-font: medium 36px/36px "Quicksand", Helvetica, sans-serif;
-    --description-font: 300 14px/16px "Poppins", sans-serif;
+    --subtitle-font: medium 32px/32px "Quicksand", Helvetica, sans-serif;
+    --body-font: 300 24px/24px "Poppins", sans-serif;
+    --description-font: 300 16px/16px "Poppins", sans-serif;
 
-    /* Botão */
+    /* Botão Comprar */
     --buyButton-bg: linear-gradient(to bottom, #38F500, #28AE00);
     --buyButton-color: #fff;
     --buyButton-padding: 10px 20px;
     --buyButton-radius: 20px;
     --buyButton-font: bold 36px "Poppins", sans-serif;
+
+    /* Botão primário */
+    --primaryButton-bg: linear-gradient(to bottom, #7E4F34, #593825);
+    --primaryButton-font: bold 24px/24px "Poppins", sans-serif;
+    --primaryButton-padding: 8px 16px;
+    --primaryButton-color: #F2F2F2;
+
+    /* Botão secundário */
+    --secondaryButton-bg: #F2F2F2;
+    --secondaryButton-font: bold 24px/24px "Poppins", sans-serif;
+    --secondaryButton-padding: 8px 16px;
+    --secondaryButton-color: #593825;
+    --secondaryButton-border: #593825 2px solid;
+    
+    --gap: 20px;
 }
 
 .buyButton {
@@ -39,4 +62,25 @@
     text-decoration: none;
     box-shadow: 0px 0px 15px 0px #38F500;
     padding: 18px 36px;
+}
+
+.primaryButton {
+    display: inline-block;
+    background: var(--primaryButton-bg);
+    font: var(--primaryButton-font);
+    padding: var(--primaryButton-padding);
+    color: var(--primaryButton-color);
+    box-shadow: var(--drop-shadow);
+    border-radius: 12px;
+}
+
+.secondaryButton {
+    display: inline-block;
+    background: var(--secondaryButton-bg);
+    font: var(--secondaryButton-font);
+    padding: var(--secondaryButton-padding);
+    color: var(--secondaryButton-color);
+    box-shadow: var(--drop-shadow);
+    border: var(--secondaryButton-border);
+    border-radius: 12px;
 }

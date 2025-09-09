@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/dashboardStyle.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <img src="./resources/images/logo.png" alt="Logo do sistema">
+        <img src="./resources/images/user.png" alt="Foto de perfil" style="height: 50px;">
+    </header>
+    
+    <div class="container">
+        <div class="navMenu">
+            <ul>
+                <li><a href="./dashboard.html"><img src="./resources/images/dash.png" alt="ícone de gráfico">Dashboard</a></li>
+                <li><a href="./cadastrar.html"><img src="./resources/images/plus.png" alt="Ícone de soma">Cadastrar</a></li>
+            </ul>
+        </div>
+        <div class="graphsContainer">
+            <div class="container1">
+                <div class="container2">
+                    <div class="estoque">
+                        <h2>Estoque</h2>
+                        <div class="qtd">
+                            <span id="estoque"></span>
+                        </div>
+                    </div>
+                    <div class="pedidos">
+                        <h2>Pedidos</h2>
+                        <div class="qtd">
+                            <span id="pedidos"></span>
+                        </div>
+                    </div>
+                    <div class="fornecedores">
+                        <h2>Fornecedores</h2>
+                        <div class="qtd">
+                            <span id="fornecedores"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="resumo">
+                    <h2>Resumo</h2>
+                    <div class="graficoResumo"></div>
+                </div>
+            </div>
+            <div class="container3">
+                <div class="consumos">
+                    <h2>Consumos</h2>
+                    <div class="graficoConsumos"></div>
+                </div>
+                <div class="entradas">
+                    <h2>Entradas</h2>
+                    <div class="graficoEntradas"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./resources/scripts/dash.js"></script>
+</body>
+
+</html>
