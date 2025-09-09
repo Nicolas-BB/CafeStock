@@ -34,9 +34,16 @@ const json = {
     ]
 }
 
-document.querySelector('#estoque').innerHTML = json.estoque;
-document.querySelector('#pedidos').innerHTML = json.pedidos;
-document.querySelector('#fornecedores').innerHTML = json.fornecedores;
+const estoque = document.querySelector('#estoque');
+const pedidos = document.querySelector('#pedidos');
+const fornecedores = document.querySelector('#fornecedores');
+const resumo = document.querySelector('.graficoResumo');
+const consumos = document.querySelector('.graficoConsumos');
+const entradas = document.querySelector('.graficoEntradas');
+
+estoque.innerHTML = json.estoque;
+pedidos.innerHTML = json.pedidos;
+fornecedores.innerHTML = json.fornecedores;
 
 json.resumo.forEach(i => {
     const ret = document.createElement('div');
@@ -47,7 +54,7 @@ json.resumo.forEach(i => {
     } else {
         ret.style.height = (i.valor * 10) + 'px';
     }
-    document.querySelector('.graficoResumo').appendChild(ret);
+    resumo.appendChild(ret);
 });
 
 json.consumo.forEach(i => {
@@ -55,7 +62,7 @@ json.consumo.forEach(i => {
     ret.classList.add('ret');
     ret.style.height = (i.valor * 5) + 'px';
     ret.style.backgroundColor = 'orange';
-    document.querySelector('.graficoConsumo').appendChild(ret);
+    consumos.appendChild(ret);
 });
 
 json.entradas.forEach(i => {
@@ -67,5 +74,5 @@ json.entradas.forEach(i => {
     } else {
         ret.style.height = (i.valor * 10) + 'px';
     }
-    document.querySelector('.graficoEntradas').appendChild(ret);
+    entradas.appendChild(ret);
 });
