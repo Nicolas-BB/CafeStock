@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/cadastrarStyle.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <title>Cadastrar</title>
+</head>
+
+<body>
+    <header>
+        <img src="./resources/images/logo.png" alt="">
+        <img src="./resources/images/user.png" alt="" style="height: 50px;">
+    </header>
+
+    <div class="container">
+        <div class="navMenu">
+            <ul>
+                <li><a href="./dashboard.html"><img src="./resources/images/dash.png" alt="">Dashboard</a></li>
+                <li><a href="./cadastrar.html"><img src="./resources/images/plus.png" alt="">Cadastrar</a></li>
+            </ul>
+        </div>
+        <div class="cadastroContainer">
+            <div class="cadastroBox">
+                <div class="inputsContainer">
+                    <div>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="type">Tipo de café</label>
+                        <input type="text" name="coffeeType" id="coffeeType">
+                    </div>
+                    <div>
+                        <label for="deliveryTime">Hora de entrega</label>
+                        <input type="time" name="deliveryTime" id="deliveryTime">
+                    </div>
+                    <div>
+                        <label for="quantity">Quantidade</label>
+                        <input type="number" name="quantity" id="quantity">
+                    </div>
+                </div>
+                <div class="actionsContainer">
+                    <button class="secondaryButton" onclick="clear()">Limpar</button>
+                    <button class="primaryButton" onclick="add()">Adicionar</button>
+                </div>
+                <div class="listContainer">
+                    <div class="filterContainer">
+                        <div class="nameFilter">Nome</div>
+                        <div class="coffeeTypeFilter">Tipo de café</div>
+                        <div class="deliveryTimeFilter">Hora de entrega</div>
+                        <div class="quantityFilter">Quantidade</div>
+                    </div>
+                    <hr>
+                    <div class="filteredContainer">
+                        <ol id="list">
+                            <ul>
+                                <li>Marcos</li>
+                                <li>Torrado</li>
+                                <li>00:00</li>
+                                <li>2</li>
+                            </ul>
+                            <ul>
+                                <li>Carla</li>
+                                <li>Torrado</li>
+                                <li>00:00</li>
+                                <li>4</li>
+                            </ul>
+                            <ul>
+                                <li>Nícolas</li>
+                                <li>Moído</li>
+                                <li>00:00</li>
+                                <li>999</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./resources/scripts/dash.js"></script>
+</body>
+
+</html>

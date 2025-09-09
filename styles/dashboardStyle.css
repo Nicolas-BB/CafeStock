@@ -40,10 +40,11 @@ header {
     gap: var(--gap);
 }
 
-.navMenu li {
+.navMenu li a {
     display: flex;
     align-items: center;
     gap: 8px;
+    color: hsl(0, 0%, 95%);
 }
 
 .navMenu img {
