@@ -68,13 +68,14 @@ header {
 }
 
 .infoCard {
-    background-color: var(--fifth-color);
+    background: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
     padding: 26px;
     display: flex;
     justify-content: center;
     width: fit-content;
     gap: 32px;
     border-radius: 32px;
+    box-shadow: var(--drop-shadow);
 }
 
 .infoSection img {
@@ -90,7 +91,7 @@ header {
 
 .infoSection h2 {
     font: var(--title-font);
-    width: 800px;
+    width: 740px;
     height: 96px;
 }
 
@@ -133,6 +134,8 @@ header {
     width: 654px;
     height: 980px;
     border-radius: 32px;
+    box-shadow: var(--drop-shadow);
+
 }
 
 .planContainer {
@@ -141,7 +144,8 @@ header {
     height: 980px;
     border-radius: 32px;
     flex-direction: column;
-    background-color: var(--fifth-color);
+    background: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
+    box-shadow: var(--drop-shadow);
     justify-content: space-between;
     align-items: center;
     padding: 50px 50px;
