@@ -1,0 +1,226 @@
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fifth-color);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.headerNavMenuUl {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    font: var(--body-font);
+    height: fit-content;
+    align-items: center;
+}
+
+.headerNavMenuUl li {
+    display: flex;
+    width: 110px;
+    justify-content: center;
+}
+
+.headerNavMenuUl a {
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+
+.heroSection {
+    height: 1000px;
+    display: flex;
+    padding: 320px 256px;
+    justify-content: right;
+    align-items: center;
+    background-image: url(../resources/images/heroSection.jpg);
+    background-size: cover;
+}
+
+.heroSection div {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 420px;
+    gap: 32px;
+}
+
+.heroSection h1 {
+    font: var(--title-font);
+}
+
+.heroSection p {
+    font: var(--body-font);
+    color: var(--third-color);
+}
+
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+}
+
+.infoCard {
+    background-color: var(--fifth-color);
+    padding: 26px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    gap: 32px;
+    border-radius: 32px;
+}
+
+.infoSection img {
+    width: 490px;
+    height: 282px;
+}
+
+.infoCard div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.infoSection h2 {
+    font: var(--title-font);
+    width: 800px;
+    height: 96px;
+}
+
+.infoSection p {
+    width: 585px;
+    font: var(--body-font)
+}
+
+.fraseDeEfeitoSection {
+    background-color: var(--fourth-color);
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fraseDeEfeitoSection h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    font-weight: normal;
+    color: var(--fifth-color);
+}
+
+.fraseDeEfeitoSection span {
+    font-weight: bold;
+}
+
+.plansSection {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    padding: 112px;
+}
+
+.plansSection img {
+    width: 654px;
+    height: 980px;
+    border-radius: 32px;
+}
+
+.planContainer {
+    display: flex;
+    width: 654px;
+    height: 980px;
+    border-radius: 32px;
+    flex-direction: column;
+    background-color: var(--fifth-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.planContainer img {
+    height: fit-content;
+    width: auto;
+}
+
+.beneficiosContainer {
+    border-color: var(--fourth-color);
+    border-style: solid;
+    border-radius: 32px;
+    font: 26px "Poppins", sans-serif;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+.planContainer span {
+    color: var(--fourth-color);
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: var(--fourth-color);
+    font-size: 80px;
+}
+
+.planContainer p {
+    font-family: "Poppins", sans-serif;
+    color: var(--fourth-color);
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.priceContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    background-color: var(--fifth-color);
+    padding: 60px 310px;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.businessHourContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.socialMediaContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMediaContainer ul{
+    display: flex;
+    gap: 8px;
+}
+
+.siteMapContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
