@@ -28,6 +28,10 @@ header {
     color: var(--fourth-color);
 }
 
+.headerLogoImg {
+    height: 48px;
+}
+
 .heroSection {
     height: 1000px;
     display: flex;
@@ -60,7 +64,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 32px;
-    padding: 32px;
+    padding: 48px 290px;
 }
 
 .infoCard {
@@ -95,6 +99,10 @@ header {
     font: var(--body-font)
 }
 
+.systemImg {
+    border-radius: 6px;
+}
+
 .fraseDeEfeitoSection {
     background-color: var(--fourth-color);
     height: 180px;
@@ -118,10 +126,10 @@ header {
     display: flex;
     gap: 32px;
     justify-content: center;
-    padding: 112px;
+    padding: 48px 290px;
 }
 
-.plansSection img {
+.plansBanner {
     width: 654px;
     height: 980px;
     border-radius: 32px;
@@ -136,11 +144,11 @@ header {
     background-color: var(--fifth-color);
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0px;
+    padding: 50px 50px;
 }
 
 .planContainer img {
-    height: fit-content;
+    height: 80px;
     width: auto;
 }
 
@@ -209,18 +217,35 @@ footer ul {
     gap: 16px;
 }
 
+.businessHour {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .socialMediaContainer {
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
 
 .socialMediaContainer ul{
     display: flex;
-    gap: 8px;
+    gap: 16px;
 }
 
 .siteMapContainer {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+}
+
+.siteMapContainer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footerLogoImg {
+    height: 48px;
 }
