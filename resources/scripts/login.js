@@ -9,7 +9,6 @@ function login() {
 
     if (users.includes(user)) {
         if (pass[users.indexOf(user)] === password) {
-            alert('Login autorizado');
             window.location.href = './dashboard.html'
         } else {
             alert('Usuário ou senha incorreto');
@@ -24,13 +23,11 @@ function register() {
     password = document.querySelector("#password").value;
 
     if (password.length < 6) {
-        alert('Insira uma senha');
+        alert('Insira uma senha de no mínimo 6 digitos');
     } else if (user in users) {
         alert('Usuário já registrado');
     } else {
         users.push(user);
         pass.push(password);
-
-        alert(`${user}, ${pass}`)
     }
 }
