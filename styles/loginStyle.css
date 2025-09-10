@@ -66,3 +66,14 @@ input {
     font: var(--description-font);
     align-self: flex-end;
 }
+
+.logoImg {
+    height: 60px;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}

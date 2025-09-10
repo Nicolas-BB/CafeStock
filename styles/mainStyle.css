@@ -36,13 +36,13 @@ ul, ol, a {
     /* Botão primário */
     --primaryButton-bg: linear-gradient(to bottom, #7E4F34, #593825);
     --primaryButton-font: bold 24px/24px "Poppins", sans-serif;
-    --primaryButton-padding: 8px 16px;
+    --primaryButton-padding: 12px 16px;
     --primaryButton-color: #F2F2F2;
 
     /* Botão secundário */
     --secondaryButton-bg: #F2F2F2;
     --secondaryButton-font: bold 24px/24px "Poppins", sans-serif;
-    --secondaryButton-padding: 8px 16px;
+    --secondaryButton-padding: 12px 16px;
     --secondaryButton-color: #593825;
     --secondaryButton-border: #593825 2px solid;
     
